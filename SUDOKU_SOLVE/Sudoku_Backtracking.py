@@ -39,11 +39,11 @@ def in_col(grid,col,num):
     #If no num exists in any columns, then return True
     return True
 
-#If num is present in that particular grid(3*3)
+#If num is present in that particular 3*3 subgrid
 def in_grid(grid,row,col,num):
     for i in range(3):
         for j in range(3):
-            #If num exists in that particular grid(3*3), then return False
+            #If num exists in that particular 3*3 subgrid
             if grid[row+i][col+j]==num:
                 return False
     #If no num exists in any grid(3*3), then return False

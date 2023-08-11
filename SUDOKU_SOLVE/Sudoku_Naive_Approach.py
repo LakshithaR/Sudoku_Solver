@@ -20,7 +20,7 @@ def isSafe(grid, row, col ,num):
         if grid[x][col]==num:
             return False
         
-    #To check if num is present in that particular 3*3 grid
+    #To check if num is present in that particular 3*3 subgrid
     srow=row-row%3
     scol=col-col%3
     for i in range(3):
