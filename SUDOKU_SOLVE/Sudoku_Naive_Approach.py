@@ -30,7 +30,7 @@ def isSafe(grid, row, col ,num):
     return True
         
 #Takes a partially filled-in grid and attempts to assign values to all unassigned locations in such a
-#way to meet the requirements for Sudoku solution
+#way to meet the requirements for Sudoku solution.
 def sudoku(grid,row,col):
     #If row = 8 and column = 9; return True to stop further operations
     if (row==N-1 and col==N):
