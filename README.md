@@ -9,7 +9,7 @@ This repository contains implementations of three different approaches to solvin
   3. Cross-Hatching with Backtracking
 <br><br>
 
-***1. NAIVE APPROACH***
+# NAIVE APPROACH
 
 The naive approach is to generate all possible configurations of numbers from 1 to 9 to fill the empty cells. Try every configuration one by one until the correct configuration is found, i.e. for every unassigned position fill the position with a number from 1 to 9. After filling all the unassigned positions check if the matrix is safe or not. If safe print else recurs for other cases.
 
@@ -17,7 +17,7 @@ The naive approach is to generate all possible configurations of numbers from 1 
 
 **Space Complexity:** O(N*N), To store the output array a matrix is needed.
 <br><br><br>
-***2. BACKTRACKING***
+# BACKTRACKING
 
 Like all other Backtracking problems, Sudoku can be solved by assigning numbers one by one to empty cells. Before assigning a number, check whether it is safe to assign. Check that the same number is not present in the current row, current column and current 3X3 subgrid. After checking for safety, assign the number, and recursively check whether this assignment leads to a solution or not. If the assignment doesn’t lead to a solution, then try the next number for the current empty cell. And if none of the number (1 to 9) leads to a solution, return false and print no solution exists.
 
@@ -25,7 +25,7 @@ Like all other Backtracking problems, Sudoku can be solved by assigning numbers 
 
 **Space Complexity:** O(N*N), To store the output array a matrix is needed.
 <br><br><br>
-***3. CROSS-HATCHING WITH BACKTRACKING***
+# CROSS-HATCHING WITH BACKTRACKING
 
 This method is an optimization of the above method 2. It runs 5X times faster than method 2. Like we used to fill sudoku by first identifying the element which is almost filled. It starts with identifying the row and column where the element should be placed. Picking the almost-filled elements first will give better pruning.
 
